@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#033572">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Script/Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Alura - Decodificador</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container" onclick="btnTheme()">
+            <img id="logo" src="img/logo.svg" alt="Logo Alura" height="48px">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <textarea id="message-textarea" class="main-textarea" rows="6" cols="40" placeholder="Digite seu texto"></textarea>
+            <div class="main-footer">
+                <p class="main-p-info"><img src="img/exclamation-circle-fill.svg" alt="Information" width="16px" height="16px"> Apenas letras minúsculas e sem acento.</p>
+                <div class="main-buttons-div">
+                    <button onclick="btnEncriptar()" class="button-criptografar">Criptografar</button>
+                    <button onclick="btnDesencriptar()" class="button-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <aside>
+        <div id="aside-home">
+            <img id="ilustracao" src="img/ilustracao.svg" alt="Ilustração Alura" width="320px" height="320px">
+            <div class="aside-home-message">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+        <div id="aside-result" class="hidden">
+            <div>
+                <p id="result-textarea"></p>
+            </div>
+            <button onclick="btnCopiar()" class="button-copiar">Copiar</button>
+        </div>
+    </aside>
+
+    <footer>
+        <p>2024 - Projeto de Estudos</p>
+        <p>GitHub: <a href="https://github.com/BR-Darkness" target="_blank">BR-Darkness</a></p>
+    </footer>
+</body>
+</html>
